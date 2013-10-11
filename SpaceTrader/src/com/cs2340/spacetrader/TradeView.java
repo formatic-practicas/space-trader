@@ -220,7 +220,8 @@ public class TradeView extends Activity {
 			return;
 		}
 
-		market.canBuyFromPlanet(market.getPlanetInventory().getGood(goodName), 1);
+		market.canBuyFromPlanet(market.getPlanetInventory().getGood(goodName),
+				1);
 
 		refreshDisplays();
 	}

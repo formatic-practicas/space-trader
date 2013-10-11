@@ -28,7 +28,7 @@ public class Map implements Serializable {
 	/** Number of planets */
 	private static final int NUMPLANET = 8;
 
-	/** List of planet names*/
+	/** List of planet names */
 	public final String[] planetNames = { "Kashyyk", "Tatooine", "Naboo",
 			"Alderon", "Xeon", "Zion", "Mordor", "Krypton" };
 

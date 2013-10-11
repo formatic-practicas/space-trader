@@ -4,11 +4,9 @@
  */
 package com.cs2340.spacetrader;
 
-
-
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,20 +15,19 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 /**
- * An object of this class acts as the user
- * interface screen that displays game details 
- * like the current planet, its detailsa and fuel level
+ * An object of this class acts as the user interface screen that displays game
+ * details like the current planet, its detailsa and fuel level
  * 
  * @author The Droids You Are Looking For
  * @version 1.0
  */
 public class Space extends Activity {
-	
+
 	/**
 	 * instance varialble for ship object
 	 */
 	private Ship ship;
-	
+
 	/**
 	 * instance variable for the planet that is being currently visited.
 	 */
@@ -38,6 +35,7 @@ public class Space extends Activity {
 
 	/**
 	 * runs at the creation of the new Activity, sets up initial state.
+	 * 
 	 * @param savedInstanceState
 	 */
 	@Override
@@ -152,13 +150,14 @@ public class Space extends Activity {
 		final Intent intent = new Intent(Space.this, ShipInventoryView.class);
 		startActivity(intent);
 	}
-	
+
 	/**
 	 * retuns details of ship and planet.
+	 * 
 	 * @return ship and planet
 	 */
 	@Override
-	public String toString(){
+	public String toString() {
 		return (ship.toString() + " on " + currentPlanet.toString());
 	}
 }

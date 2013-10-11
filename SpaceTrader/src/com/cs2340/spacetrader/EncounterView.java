@@ -4,9 +4,9 @@
  */
 package com.cs2340.spacetrader; // $codepro.audit.disable packageNamingConvention
 
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -53,6 +53,7 @@ public class EncounterView extends Activity {
 
 	/**
 	 * Creates options menu
+	 * 
 	 * @param menu
 	 * @return success or not
 	 */
@@ -64,6 +65,7 @@ public class EncounterView extends Activity {
 
 	/**
 	 * populates options menu
+	 * 
 	 * @param item
 	 * @return success or not
 	 */
@@ -110,7 +112,8 @@ public class EncounterView extends Activity {
 	/**
 	 * Consequences of user's choice of action1
 	 * 
-	 * @param view - the view it is called from
+	 * @param view
+	 *            - the view it is called from
 	 */
 	public void fight(View view) {
 		if (GameSetup.thePlayer.getship().fight()) {
@@ -128,6 +131,7 @@ public class EncounterView extends Activity {
 
 	/**
 	 * Consequences of user's choice of action2
+	 * 
 	 * @param view
 	 */
 	public void flee(View view) {
@@ -152,13 +156,14 @@ public class EncounterView extends Activity {
 		Intent intent = new Intent(EncounterView.this, PlanetView.class);
 		startActivity(intent);
 	}
-	
+
 	/**
 	 * Overrides toString because audit complains
+	 * 
 	 * @return a random string
 	 */
 	@Override
-	public String toString(){
+	public String toString() {
 		return "blah";
 	}
 }

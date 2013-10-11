@@ -24,11 +24,11 @@ import android.widget.Toast;
 public class GameSetup extends Activity {
 	/** application namespace **/
 	public static final String PLAYA = "com.example.myfirstapp.PLAYA";
-	
+
 	/** initial player cash **/
 	public static final int INITMONEY = 2000;
-	
-	/** initial player cargo capacity**/
+
+	/** initial player cargo capacity **/
 	public static final int INITCARGOCAP = 10;
 
 	/** singleton representing player object **/
@@ -72,13 +72,14 @@ public class GameSetup extends Activity {
 
 	/**
 	 * Overrides toString because audit complains
+	 * 
 	 * @return a random string
 	 */
 	@Override
-	public String toString(){
+	public String toString() {
 		return "blah";
 	}
-	
+
 	/**
 	 * @param item
 	 *            - selected item

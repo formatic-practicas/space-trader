@@ -193,12 +193,14 @@ public class PlanetView extends FragmentActivity {
 	 * @author David
 	 * 
 	 */
-	private class ContractFragment extends DialogFragment { // $codepro.audit.disable com.instantiations.assist.eclipse.analysis.audit.rule.effectivejava.favorStaticMemberClassesOverNonStatic
-		/** dialog string to be set later*/
+	private class ContractFragment extends DialogFragment { // $codepro.audit.disable
+															// com.instantiations.assist.eclipse.analysis.audit.rule.effectivejava.favorStaticMemberClassesOverNonStatic
+		/** dialog string to be set later */
 		public String dialog = "";
 
 		/**
 		 * Creates the dialog activity
+		 * 
 		 * @param savedInstanceState
 		 * @return Dialog
 		 */
@@ -214,8 +216,7 @@ public class PlanetView extends FragmentActivity {
 						public void onClick(DialogInterface dialog, int id) {
 							GameSetup.thePlayer.hasContract = true;
 							GameSetup.thePlayer.setContract(contract);
-							Button contractButton = (Button) 
-									findViewById(R.id.planet_button_contract);
+							Button contractButton = (Button) findViewById(R.id.planet_button_contract);
 							contractButton.setEnabled(false);
 							Toast.makeText(context,
 									"You've accepted the contract",

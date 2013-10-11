@@ -109,7 +109,8 @@ public class Contract implements Serializable {
 			reward = minRewardBring
 					+ random.nextInt(maxRewardBring - minRewardBring);
 		} else {
-			reward = MINREWARD + random.nextInt(MAXREWARD - MINREWARD); // $codepro.audit.disable expressionValue
+			reward = MINREWARD + random.nextInt(MAXREWARD - MINREWARD); // $codepro.audit.disable
+																		// expressionValue
 		}
 	}
 
@@ -168,8 +169,7 @@ public class Contract implements Serializable {
 					"A client on %s is offering %d credits for the safe delivery"
 							+ " of %d units of %s.", destination, reward,
 					reqAmount, reqGood);
-		}
-		else{
+		} else {
 			out = "Invalid Type";
 		}
 		return out;
@@ -192,7 +192,7 @@ public class Contract implements Serializable {
 	public int getReward() {
 		return reward;
 	}
-	
+
 	/**
 	 * Returns the required good amount
 	 * 
@@ -201,7 +201,7 @@ public class Contract implements Serializable {
 	public int getReqAmount() {
 		return reqAmount;
 	}
-	
+
 	/**
 	 * Returns the required good
 	 * 
@@ -210,7 +210,7 @@ public class Contract implements Serializable {
 	public String getReqGood() {
 		return reqGood;
 	}
-	
+
 	/**
 	 * Returns the type of the contract
 	 * 

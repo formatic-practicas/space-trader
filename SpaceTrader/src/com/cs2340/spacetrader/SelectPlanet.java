@@ -15,28 +15,30 @@ import android.widget.ListView;
 
 /**
  * Activity that displays a list of planets to travel to
+ * 
  * @author Andrew
  * @version 1.0
- *
+ * 
  */
 public class SelectPlanet extends Activity {
 	/** list view of planets */
 	private ListView pListView;
-	
+
 	/** player's ship */
 	private Ship ship;
-	
+
 	/** player's current planet */
 	private Planet currentPlanet;
-	
-	/** haha constants! this one is 10*/
+
+	/** haha constants! this one is 10 */
 	private static final int TEN = 10;
-	
-	/** haha constants! this one is 2*/
+
+	/** haha constants! this one is 2 */
 	private static final int TWO = 2;
 
 	/**
 	 * sets up activity upon creation
+	 * 
 	 * @param savedInstanceState
 	 */
 	@Override
@@ -79,13 +81,14 @@ public class SelectPlanet extends Activity {
 			startActivity(intent);
 		}
 	}
-	
+
 	/**
 	 * Overrides toString because audit complains
+	 * 
 	 * @return a random string
 	 */
 	@Override
-	public String toString(){
+	public String toString() {
 		return "blah";
 	}
 }

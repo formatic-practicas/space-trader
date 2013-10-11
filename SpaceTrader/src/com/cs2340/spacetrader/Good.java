@@ -128,12 +128,12 @@ public class Good implements Serializable {
 	 * @return amount of goods
 	 */
 	public int generateAmount(int planetTechLvl) {
-		
+
 		int amount = 0; // returned amount of item on the planet
 		int baseAmount = 50;
 		Random rand = new Random();
 		resetPrice(planetTechLvl);
-		
+
 		amount = rand.nextInt(baseAmount - Math.abs(idealLvl - planetTechLvl));
 
 		return amount;

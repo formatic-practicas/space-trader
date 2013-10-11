@@ -3,6 +3,7 @@
  * Contains Activity to show the ship's inventory and holdings
  */
 package com.cs2340.spacetrader; // $codepro.audit.disable packageNamingConvention
+
 import java.util.List;
 
 import android.app.Activity;
@@ -77,13 +78,14 @@ public class ShipInventoryView extends Activity {
 		getMenuInflater().inflate(R.menu.menu_options, menu);
 		return true;
 	}
-	
+
 	/**
 	 * Overrides toString because audit complains
+	 * 
 	 * @return a random string
 	 */
 	@Override
-	public String toString(){
+	public String toString() {
 		return "blah";
 	}
 
@@ -143,13 +145,14 @@ public class ShipInventoryView extends Activity {
 			}
 			return v;
 		}
-		
+
 		/**
 		 * Overrides toString because audit complains
+		 * 
 		 * @return a random string
 		 */
 		@Override
-		public String toString(){
+		public String toString() {
 			return "blah";
 		}
 	}

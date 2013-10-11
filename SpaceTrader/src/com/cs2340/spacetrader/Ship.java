@@ -85,7 +85,7 @@ public class Ship implements Serializable {
 		this.weaponLevel = 1;
 		this.armorLevel = 1;
 	}
-	
+
 	/**
 	 * constructor for ship class
 	 * 
@@ -94,7 +94,7 @@ public class Ship implements Serializable {
 	 * @param nSlots
 	 *            - number of cargo slots the ship has
 	 * @param planetName
-	 * 			  -The name of the planet
+	 *            -The name of the planet
 	 * **/
 	public Ship(int gold, int nSlots, String planetName) {
 		this.planetName = planetName;
@@ -351,7 +351,7 @@ public class Ship implements Serializable {
 	public String toString() {
 		return "blah";
 	}
-	
+
 	private enum Weapons {
 		BLASTER("Blaster Pistol", 1), GAT("Gattling Guns", THREE), PHOTON(
 				"Photon Torpedos", FIVE), ANTIMATTER("Antimatter", ELEVEN);
@@ -398,6 +398,7 @@ public class Ship implements Serializable {
 
 		/**
 		 * Returns the next level of weapons
+		 * 
 		 * @param weaponLevel
 		 * @return weapon enum
 		 */
@@ -435,6 +436,7 @@ public class Ship implements Serializable {
 		public String getName() {
 			return name;
 		}
+
 		/**
 		 * @return power of the armor
 		 */

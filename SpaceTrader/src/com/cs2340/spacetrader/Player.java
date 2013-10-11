@@ -39,7 +39,8 @@ public class Player implements Serializable {
 	public static final int STARTINGPOINTS = 16;
 
 	/** Whether Player has constract **/
-	public boolean hasContract = false; // $codepro.audit.disable instanceFieldVisibility
+	public boolean hasContract = false; // $codepro.audit.disable
+										// instanceFieldVisibility
 
 	/**
 	 * Constructor for Player Class
@@ -85,12 +86,13 @@ public class Player implements Serializable {
 	public void setContract(Contract contract) {
 		this.contract = contract;
 	}
-	
+
 	/**
 	 * returns the name of the player.
+	 * 
 	 * @return name
 	 */
-	public String toString(){
+	public String toString() {
 		return name;
 	}
 }

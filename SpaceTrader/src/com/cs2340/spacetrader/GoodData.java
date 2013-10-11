@@ -68,13 +68,14 @@ public class GoodData implements Serializable {
 	public void decreaseQuantityBy(int delta) {
 		quantity = quantity - delta;
 	}
-	
+
 	/**
 	 * Overrides toString because audit complains
+	 * 
 	 * @return a random string
 	 */
 	@Override
-	public String toString(){
+	public String toString() {
 		return "blah";
 	}
 }

@@ -47,7 +47,7 @@ import android.content.Context;
  */
 
 public class MemoryService {
-	
+
 	/**
 	 * the name of the file that holds the saved games.
 	 */
@@ -126,12 +126,13 @@ public class MemoryService {
 			return false;
 		}
 	}
-	
+
 	/**
 	 * returns the name of the file used to save a game.
+	 * 
 	 * @return FILENAME
 	 */
-	public String toString(){
+	public String toString() {
 		return FILENAME;
 	}
 }

@@ -8,9 +8,10 @@ import java.io.Serializable;
 
 /**
  * Inventory of a planet, contains info specific for a planet
+ * 
  * @author Nikhil
  * @version 1.0
- *
+ * 
  */
 public class PlanetInventory extends Inventory implements Serializable {
 	/** the planet's tech level */
@@ -18,6 +19,7 @@ public class PlanetInventory extends Inventory implements Serializable {
 
 	/**
 	 * Constructor for PlanetInventory
+	 * 
 	 * @param techLevel
 	 */
 	public PlanetInventory(int techLevel) {

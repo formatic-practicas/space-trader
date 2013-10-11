@@ -19,20 +19,21 @@ public class ShipInventory extends Inventory implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	/** player's cash on hand*/
+	/** player's cash on hand */
 	private int moneyLeft;
-	
+
 	/** cargo capacity left */
 	private int capacityLeft;
-	
+
 	/** max cargo capacity */
 	private int capacityMax;
-	
-	/** the number 2*/
+
+	/** the number 2 */
 	private static final int TWO = 2;
 
 	/**
 	 * Constructor for ShipInventory
+	 * 
 	 * @param initialMoney
 	 * @param initialCapacity
 	 */
@@ -44,6 +45,7 @@ public class ShipInventory extends Inventory implements Serializable {
 
 	/**
 	 * get for moneyLeft
+	 * 
 	 * @return money left
 	 */
 	public int getMoneyLeft() {
@@ -52,6 +54,7 @@ public class ShipInventory extends Inventory implements Serializable {
 
 	/**
 	 * get for capacityLeft
+	 * 
 	 * @return cargo capacity left
 	 */
 	public int getCapacityLeft() {
@@ -60,6 +63,7 @@ public class ShipInventory extends Inventory implements Serializable {
 
 	/**
 	 * get for capacityMax
+	 * 
 	 * @return max cargo capacity
 	 */
 	public int getCapacityMax() {
@@ -68,6 +72,7 @@ public class ShipInventory extends Inventory implements Serializable {
 
 	/**
 	 * changes the player's money by delta
+	 * 
 	 * @param delta
 	 */
 	public void deltaMoney(int delta) {
@@ -76,6 +81,7 @@ public class ShipInventory extends Inventory implements Serializable {
 
 	/**
 	 * changes the capacity left by delta
+	 * 
 	 * @param delta
 	 */
 	public void deltaCapacity(int delta) {
@@ -113,14 +119,15 @@ public class ShipInventory extends Inventory implements Serializable {
 		}
 		return totalValue >> TWO;
 	}
-	
+
 	/**
 	 * Overrides toString because audit complains
+	 * 
 	 * @return a random string
 	 */
 	@Override
-	public String toString(){
+	public String toString() {
 		return "blah";
 	}
-	
+
 }

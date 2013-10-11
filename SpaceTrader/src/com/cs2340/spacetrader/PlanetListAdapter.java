@@ -31,10 +31,10 @@ public class PlanetListAdapter extends ArrayAdapter<Planet> {
 
 	/** input data array */
 	public Planet data[] = null;
-	
-	/** constant for calculating chance of encounters*/
+
+	/** constant for calculating chance of encounters */
 	private static final int ONEHUNDRED = 100;
-	
+
 	/** Constant change of encounters, in percent */
 	private static final int ENCOUNTERCHANCE = 20;
 
@@ -135,8 +135,9 @@ public class PlanetListAdapter extends ArrayAdapter<Planet> {
 
 	/**
 	 * Helper class to hold planet layout elements
+	 * 
 	 * @author David
-	 *
+	 * 
 	 */
 	private static class PlanetHolder {
 		/** Button view */

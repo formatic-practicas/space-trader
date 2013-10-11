@@ -5,8 +5,6 @@
 
 package com.cs2340.spacetrader; // $codepro.audit.disable packageNamingConvention
 
-import com.cs2340.spacetrader.TradeView.GoodInfo; // $codepro.audit.disable unnecessaryImport
-
 import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -15,6 +13,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.cs2340.spacetrader.TradeView.GoodInfo; // $codepro.audit.disable unnecessaryImport
 
 /**
  * TradeAdapter class adapts array lists to populate a list view
@@ -35,13 +35,14 @@ public class TradeAdapter extends ArrayAdapter<GoodInfo> {
 
 	/**
 	 * Overrides toString because audit complains
+	 * 
 	 * @return a random string
 	 */
 	@Override
-	public String toString(){
+	public String toString() {
 		return "blah";
 	}
-	
+
 	/**
 	 * Constructor for the adapter
 	 * 
@@ -134,19 +135,20 @@ public class TradeAdapter extends ArrayAdapter<GoodInfo> {
 	private static class GoodHolder {
 		/** good name field */
 		private TextView txtName;
-		
+
 		/** good buy button */
 		private Button txtBuyGood;
-		
+
 		/** good sell button */
 		private Button txtSellGood;
-		
+
 		/**
 		 * Overrides toString because audit complains
+		 * 
 		 * @return a random string
 		 */
 		@Override
-		public String toString(){
+		public String toString() {
 			return "blah";
 		}
 	}

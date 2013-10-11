@@ -7,11 +7,11 @@ package com.cs2340.spacetrader;
 
 import java.io.Serializable;
 
-
 /**
- * This class encapsulates the concept of a Planet and stores vital 
- * information normally associated with a planet. It mainly has getters 
- * and setters to access the information.
+ * This class encapsulates the concept of a Planet and stores vital information
+ * normally associated with a planet. It mainly has getters and setters to
+ * access the information.
+ * 
  * @author The Droids You Are Looking For
  * @version 1.0
  */
@@ -161,12 +161,13 @@ public class Planet implements Serializable {
 	public boolean getMarketBusy() {
 		return this.marketBusy;
 	}
-	
+
 	/**
 	 * returns the name of the planet.
+	 * 
 	 * @return name
 	 */
-	public String toString(){
+	public String toString() {
 		return this.name;
 	}
 }
