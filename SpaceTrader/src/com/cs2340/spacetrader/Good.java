@@ -7,6 +7,9 @@ package com.cs2340.spacetrader; // $codepro.audit.disable packageNamingConventio
 import java.io.Serializable;
 import java.util.Random;
 
+import android.content.res.Resources;
+import android.view.View;
+
 //import android.util.Log;
 /**
  * This class encapsulates the concept of a Good. It holds data attributes that
@@ -203,18 +206,18 @@ public class Good implements Serializable {
 	 * @return dataList
 	 */
 	public static Good[] getDataList() {
-
+		String[] products = Resources.getSystem().getStringArray(R.array.products);
 		Good[] dataList = new Good[10];
-		dataList[0] = new Good("Water", 0, 0, 2, 30, 3, 4, true);
-		dataList[1] = new Good("Furs", 0, 0, 0, 250, 10, 10, true);
-		dataList[2] = new Good("Food", 1, 0, 1, 100, 5, 5, true);
-		dataList[3] = new Good("Ore", 2, 2, 3, 350, 20, 10, true);
-		dataList[4] = new Good("Games", 3, 1, 6, 250, -10, 5, true);
-		dataList[5] = new Good("Firearms", 3, 1, 5, 1250, -75, 100, false);
-		dataList[6] = new Good("Medicine", 4, 1, 6, 650, -20, 10, true);
-		dataList[7] = new Good("Machines", 4, 3, 5, 900, -30, 5, true);
-		dataList[8] = new Good("Narcotics", 5, 0, 5, 3500, -125, 150, false);
-		dataList[9] = new Good("Robots", 6, 4, 7, 5000, -150, 100, true);
+		dataList[0] = new Good(products[0], 0, 0, 2, 30, 3, 4, true);
+		dataList[1] = new Good(products[1], 0, 0, 0, 250, 10, 10, true);
+		dataList[2] = new Good(products[2], 1, 0, 1, 100, 5, 5, true);
+		dataList[3] = new Good(products[3], 2, 2, 3, 350, 20, 10, true);
+		dataList[4] = new Good(products[4], 3, 1, 6, 250, -10, 5, true);
+		dataList[5] = new Good(products[5], 3, 1, 5, 1250, -75, 100, false);
+		dataList[6] = new Good(products[6], 4, 1, 6, 650, -20, 10, true);
+		dataList[7] = new Good(products[7], 4, 3, 5, 900, -30, 5, true);
+		dataList[8] = new Good(products[8], 5, 0, 5, 3500, -125, 150, false);
+		dataList[9] = new Good(products[9], 6, 4, 7, 5000, -150, 100, true);
 
 		return dataList;
 	}

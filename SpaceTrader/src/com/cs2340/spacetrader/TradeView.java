@@ -184,8 +184,11 @@ public class TradeView extends Activity {
 		cashDisplay.setText('$' + String.valueOf(sInventory.getMoneyLeft()));
 		capacityDisplay.setText(String.valueOf(sInventory.getCapacityLeft()));
 		// extract good info
-		String[] goodlist = { "Water", "Furs", "Food", "Ore", "Games",
-				"Firearms", "Medicine", "Machines", "Narcotics", "Robots" };
+//		Resources res = getResources();
+//		String[] goodlist = res.getStringArray(R.array.products);
+		String[] goodlist = Space.getContext().getResources().getStringArray(R.array.products);
+//		String[] goodlist = { "Water", "Furs", "Food", "Ore", "Games",
+//				"Firearms", "Medicine", "Machines", "Narcotics", "Robots" };
 		GoodInfo[] gi = new GoodInfo[goodlist.length];
 		int i = 0;
 		for (String good : goodlist) {

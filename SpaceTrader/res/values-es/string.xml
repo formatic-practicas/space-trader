@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SpaceTrader</string>
+    <string name="intro_text">Bienvenido a Space Trader</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="title_activity_launcher">Space Trader</string>
+    <string name="button_newGame">Nuevo juego</string>
+    <string name="button_loadGame">Cargar juego</string>
+    <string name="hello_world">Juguemos</string>
+    <string name="title_activity_game_setup">Crea tu personaje</string>
+    <string name="too_high_error">Borra algunos puntos. Deben sumar 16 para continuar</string>
+    <string name="too_low_error">Todavía te quedan puntos. Deben sumar 16 para continuar </string>
+    <string name="title_activity_space">Espacio</string>
+    <string name="text_fuel_level">Nivel de combustible:</string>
+    <string name="text_current_planet">Orbita actual: </string>
+    <string name="space_current_planet"></string>
+    <string name="button_dock">Aterrizar en planeta</string>
+    <string name="button_destination">Cambiar destino</string>
+    <string name="button_ship">Ver nave</string>
+    <string name="setup_text_pilot">Piloto</string>
+    <string name="setup_text_fighter">Mercenario</string>
+    <string name="setup_text_engineer">Ingeniero</string>
+    <string name="setup_text_trader">Comerciante</string>
+    <string name="setup_input_name">Nombre del personaje</string>
+    <string name="setup_radio_easy">Fácil</string>
+    <string name="setup_radio_hard">Difícil</string>
+    <string name="setup_radio_impossible">Imposible</string>
+    <string name="setup_button_submit">Aceptar</string>
+    <string name="planet_docked">Actualmente atracado en: </string>
+    <string name="planet_business">Qué deseas hacer?</string>
+    <string name="planet_button_refuel">Recargar combustible</string>
+    <string name="planet_button_trade">Comprar y vender</string>
+    <string name="planet_button_leave">Volver al espacio</string>
+    <string name="planet_button_upgrade">Actualizar nave</string>
+    <string name="planet_button_contract">Buscar un contrato</string>
+    <string name="trade_leave">Abandonar el mercado</string>
+    <string name="trade_capacity_text">Capacidad: </string>
+    <string name="trade_cash_text">Dinero: </string>
+    <string name="trade_item_name">%s</string>
+
+    <string-array name="trade_list">
+        <item>Test</item>
+    </string-array>
+
+    <string name="temp_name">Combustible</string>
+    <string name="temp_buy">COMPRAR $30\n2 disponible</string>
+    <string name="temp_sell">VENDER $27\n5 propio</string>
+    <string name="title_activity_planet">El muelle</string>
+    <string name="title_activity_trade_view">El mercado</string>
+    <string name="title_activity_ship_inventory_view">Inventario de la nave</string>
+    <string name="button_stay_here">Quedarse aquí</string>
+    <string name="title_activity_select_planet">Seleccionar planeta</string>
+    <string name="text_tech">Nivel técnico: </string>
+    <string name="save_game">Salvar</string>
+    <string name="quit_game">Salir</string>
+    <string name="upgrade_leave">Dejar el hangar</string>
+    <string name="return_to_space">Volver al espacio</string>
+    <string name="button_upgrade_guns">Actualizar armamento</string>
+    <string name="button_upgrade_armor">Actualizar protección</string>
+    <string name="title_activity_upgrade_ship_view">Actualizar nave</string>
+    <string name="title_activity_encounter">Encuentro fortuito!</string>
+    <string name="encounter_description">[Descripción del encuentro]</string>
+    <string name="encounter_title">[Título del encuentro]</string>
+    <string name="encounter_action1">Abordar</string>
+    <string name="encounter_action2">Evadir</string>
+    <string name="contract_title">Has recibido una oferta!</string>
+    <string name="contract_accept">Aceptar</string>
+    <string name="contract_decline">Declinar</string>
+    <string name="ship_refueled">Repostaje completo</string>
+
+    <string-array name="products">
+        <item>Agua</item>
+        <item>Pieles</item>
+        <item>Comida</item>
+        <item>Minerales</item>
+        <item>Juegos</item>
+        <item>Armas</item>
+        <item>Medicinas</item>
+        <item>Maquinas</item>
+        <item>Narcóticos</item>
+        <item>Robots</item>
+    </string-array>
+    <string name="buy">COMPRAR</string>
+    <string name="sell">VENDER</string>
+    <string name="available">Disponible</string>
+    <string name="can_t_buy_here">No puedes comprar aquí</string>
+    <string name="can_t_sell_here">No puedes vender aquí</string>
+</resources>

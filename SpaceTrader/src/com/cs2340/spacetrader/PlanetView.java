@@ -4,6 +4,7 @@
  */
 package com.cs2340.spacetrader; // $codepro.audit.disable packageNamingConvention
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -184,7 +185,7 @@ public class PlanetView extends FragmentActivity {
 	 */
 	public void refuel(View view) {
 		GameSetup.thePlayer.getship().refuel();
-		Toast.makeText(this, "Ship Refueled", Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, R.string.ship_refueled, Toast.LENGTH_SHORT).show();
 	}
 
 	/**
@@ -193,6 +194,7 @@ public class PlanetView extends FragmentActivity {
 	 * @author David
 	 * 
 	 */
+	@SuppressLint("ValidFragment")
 	private class ContractFragment extends DialogFragment { // $codepro.audit.disable
 															// com.instantiations.assist.eclipse.analysis.audit.rule.effectivejava.favorStaticMemberClassesOverNonStatic
 		/** dialog string to be set later */

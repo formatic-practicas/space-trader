@@ -37,15 +37,15 @@
     <string name="trade_capacity_text">Capacity: </string>
     <string name="trade_cash_text">Cash: </string>
     <string name="trade_item_name">%s</string>
+
     <string-array name="trade_list">
-        <item >Test</item>
+        <item>Test</item>
     </string-array>
+
     <string name="temp_name">Fuel</string>
     <string name="temp_buy">BUY $30\n2 Available</string>
     <string name="temp_sell">SELL $27\n5 Owned</string>
-
     <string name="title_activity_planet">The Dock</string>
-    
     <string name="title_activity_trade_view">The Market</string>
     <string name="title_activity_ship_inventory_view">Ship\'s Inventory</string>
     <string name="button_stay_here">Stay Here</string>
@@ -66,5 +66,26 @@
     <string name="contract_title">You\'ve found an offer!</string>
     <string name="contract_accept">Accept</string>
     <string name="contract_decline">Decline</string>
-    
+    <string name="ship_refueled">Ship refueled</string>
+
+    <string-array name="products">
+        <item>Agua</item>
+        <item>Water</item>
+        <item>Furs</item>
+        <item>Food</item>
+        <item>Ore</item>
+        <item>Games</item>
+        <item>Firearms</item>
+        <item>Medicine</item>
+        <item>Machines</item>
+        <item>Narcotics</item>
+        <item>Robots</item>
+    </string-array>
+
+    <string name="buy">BUY</string>
+    <string name="sell">SELL</string>
+    <string name="available">Available</string>
+    <string name="can_t_buy_here">Can\'t buy here</string>
+    <string name="can_t_sell_here">Can\'t sell here</string>
+
 </resources>

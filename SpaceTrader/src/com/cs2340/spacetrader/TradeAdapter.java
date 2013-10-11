@@ -13,7 +13,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
-
 import com.cs2340.spacetrader.TradeView.GoodInfo; // $codepro.audit.disable unnecessaryImport
 
 /**
@@ -32,6 +31,13 @@ public class TradeAdapter extends ArrayAdapter<GoodInfo> {
 
 	/** data holder for input array */
 	private GoodInfo data[] = null;
+	
+	// Cadenas
+	private String buy = getContext().getString(R.string.buy);
+	private String sell = getContext().getString(R.string.sell);
+	private String available = getContext().getString(R.string.available);
+	private String cantBuyHere = getContext().getString(R.string.can_t_buy_here);
+	private String cantSellHere = getContext().getString(R.string.can_t_sell_here);
 
 	/**
 	 * Overrides toString because audit complains
@@ -89,20 +95,20 @@ public class TradeAdapter extends ArrayAdapter<GoodInfo> {
 
 		if (!Good.getDataList()[position].canBuy(GameSetup.theMap.getPlanet(
 				planetName).getNTechLevel())) {
-			buyText = ("Can't Buy\nHere");
+			buyText = (cantBuyHere);
 			holder.txtBuyGood.setEnabled(false);
 		} else {
-			buyText = String.format("BUY $%d\n%d Available",
+			buyText = String.format(buy + " $ %d %d "+ available,
 					data[position].buyPrice, data[position].planetAmount);
 			holder.txtBuyGood.setEnabled(true);
 		}
 
 		if (!Good.getDataList()[position].canSell(GameSetup.theMap.getPlanet(
 				planetName).getNTechLevel())) {
-			sellText = ("Can't Sell\nHere");
+			sellText = (cantSellHere);
 			holder.txtSellGood.setEnabled(false);
 		} else {
-			sellText = String.format("SELL $%d\n%d Available",
+			sellText = String.format(sell +" $ %d %d "+available,
 					data[position].sellPrice, data[position].shipAmount);
 			holder.txtSellGood.setEnabled(true);
 		}

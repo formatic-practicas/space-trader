@@ -5,6 +5,7 @@
 package com.cs2340.spacetrader;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -159,5 +160,9 @@ public class Space extends Activity {
 	@Override
 	public String toString() {
 		return (ship.toString() + " on " + currentPlanet.toString());
+	}
+
+	public static Context getContext() {
+		return getContext();
 	}
 }
