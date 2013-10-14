@@ -204,18 +204,30 @@ public class Good implements Serializable {
 	 * 
 	 * @return dataList
 	 */
-	public static Good[] getDataList() {	
+	public static Good[] getDataList() {
+		String[] goodList = TradeView.goodlist;
         Good[] dataList = new Good[10];
-		dataList[0] = new Good("Agua", 0, 0, 2, 30, 3, 4, true);
-		dataList[1] = new Good("Pieles", 0, 0, 0, 250, 10, 10, true);
-		dataList[2] = new Good("Comida", 1, 0, 1, 100, 5, 5, true);
-		dataList[3] = new Good("Minerales", 2, 2, 3, 350, 20, 10, true);
-		dataList[4] = new Good("Juegos", 3, 1, 6, 250, -10, 5, true);
-		dataList[5] = new Good("Armas", 3, 1, 5, 1250, -75, 100, false);
-		dataList[6] = new Good("Medicinas", 4, 1, 6, 650, -20, 10, true);
-		dataList[7] = new Good("Maquinas", 4, 3, 5, 900, -30, 5, true);
-		dataList[8] = new Good("NarcÃ³ticos", 5, 0, 5, 3500, -125, 150, false);
-		dataList[9] = new Good("Robots", 6, 4, 7, 5000, -150, 100, true);
+		dataList[0] = new Good(goodList[0], 0, 0, 2, 30, 3, 4, true);
+		dataList[1] = new Good(goodList[1], 0, 0, 0, 250, 10, 10, true);
+		dataList[2] = new Good(goodList[2], 1, 0, 1, 100, 5, 5, true);
+		dataList[3] = new Good(goodList[3], 2, 2, 3, 350, 20, 10, true);
+		dataList[4] = new Good(goodList[4], 3, 1, 6, 250, -10, 5, true);
+		dataList[5] = new Good(goodList[5], 3, 1, 5, 1250, -75, 100, false);
+		dataList[6] = new Good(goodList[6], 4, 1, 6, 650, -20, 10, true);
+		dataList[7] = new Good(goodList[7], 4, 3, 5, 900, -30, 5, true);
+		dataList[8] = new Good(goodList[8], 5, 0, 5, 3500, -125, 150, false);
+		dataList[9] = new Good(goodList[9], 6, 4, 7, 5000, -150, 100, true);
+
+//		dataList[0] = new Good("Agua", 0, 0, 2, 30, 3, 4, true);
+//		dataList[1] = new Good("Pieles", 0, 0, 0, 250, 10, 10, true);
+//		dataList[2] = new Good("Comida", 1, 0, 1, 100, 5, 5, true);
+//		dataList[3] = new Good("Minerales", 2, 2, 3, 350, 20, 10, true);
+//		dataList[4] = new Good("Juegos", 3, 1, 6, 250, -10, 5, true);
+//		dataList[5] = new Good("Armas", 3, 1, 5, 1250, -75, 100, false);
+//		dataList[6] = new Good("Medicinas", 4, 1, 6, 650, -20, 10, true);
+//		dataList[7] = new Good("Maquinas", 4, 3, 5, 900, -30, 5, true);
+//		dataList[8] = new Good("Narcóticos", 5, 0, 5, 3500, -125, 150, false);
+//		dataList[9] = new Good("Robots", 6, 4, 7, 5000, -150, 100, true);
 		return dataList;
 	}
 

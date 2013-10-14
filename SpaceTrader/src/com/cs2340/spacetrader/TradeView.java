@@ -41,7 +41,7 @@ public class TradeView extends Activity {
 
 	/** MarketVisit Object, handles transactions */
 	public MarketVisit market;
-	public String[] goodlist= null;
+	public static String[] goodlist= null;
 	/**
 	 * onCreate method, run at creation of Activity, set's up initial states
 	 * 
