@@ -7,6 +7,7 @@ package com.cs2340.spacetrader;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -42,8 +43,10 @@ public class Space extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+	
 		setContentView(R.layout.activity_space);
-
+		
+ 
 		// Current ship and planet
 		ship = GameSetup.thePlayer.getship();
 		currentPlanet = GameSetup.theMap.getPlanet(ship.getPlanetName());

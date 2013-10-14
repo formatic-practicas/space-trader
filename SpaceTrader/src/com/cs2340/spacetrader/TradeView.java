@@ -41,7 +41,7 @@ public class TradeView extends Activity {
 
 	/** MarketVisit Object, handles transactions */
 	public MarketVisit market;
-
+	public String[] goodlist= null;
 	/**
 	 * onCreate method, run at creation of Activity, set's up initial states
 	 * 
@@ -51,7 +51,8 @@ public class TradeView extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_trade);
-
+		goodlist= getResources().getStringArray(R.array.products);
+		
 		planet = GameSetup.theMap.getPlanet(GameSetup.thePlayer.getship()
 				.getPlanetName());
 		sInventory = GameSetup.thePlayer.getship().getInventory();
@@ -176,19 +177,13 @@ public class TradeView extends Activity {
 			return "blah";
 		}
 	}
-
 	/**
 	 * Reloads the data in the screen so all quantities are updated
 	 */
 	private void refreshDisplays() {
 		cashDisplay.setText('$' + String.valueOf(sInventory.getMoneyLeft()));
 		capacityDisplay.setText(String.valueOf(sInventory.getCapacityLeft()));
-		// extract good info
-//		Resources res = getResources();
-//		String[] goodlist = res.getStringArray(R.array.products);
-		String[] goodlist = Space.getContext().getResources().getStringArray(R.array.products);
-//		String[] goodlist = { "Water", "Furs", "Food", "Ore", "Games",
-//				"Firearms", "Medicine", "Machines", "Narcotics", "Robots" };
+		
 		GoodInfo[] gi = new GoodInfo[goodlist.length];
 		int i = 0;
 		for (String good : goodlist) {
